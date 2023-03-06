@@ -1,53 +1,268 @@
 @media all and (max-width:600px){
-     body{
 
+    @import url(assets/fonts/static/Inter-Bold.ttf);
+    *{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+   
+    }
+     .desktop-header{
+       width: 100%;
+       height: 10vh;
+       position: fixed;
+       top: 0;
+       background-color: rgb(255, 255, 255);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: row;
+       gap: 2%;
+     }
+     .desktop-header nav{
+        display: none;
+     }
+
+     .desktop-header .desktop-header-spacer{
+        display: none;
+     }
+     .desktop-header .mobile-show-menu{
+        display: block;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+     }
+     .desktop-header .mobile-show-menu ion-icon{
+      font-size: 1.5rem;
+      height: 100%;
+      width: 20%;
+     }
+
+     .desktop-middle-Section{
+        width: 100%;
+        min-height: 200vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+     .desktop-middle-Section .left
+     {
+        background: rgb(255, 255, 255);
         width: 100%;
         min-height: 100vh;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
      }
-    .mobile-header{
-        position: relative;
+
+     .desktop-middle-Section .left .img{
         width: 100%;
-        height: 10vh;
-        justify-content: center;
+     }
+     .desktop-middle-Section .left .bottom{
+        width: 100%;
+        min-height: 70%;
+        padding: 0;
+     }
+
+     .desktop-middle-Section .left .bottom .text{
+      width: 100%;
+      height: 40%;
+      padding: 0;
+      justify-content: center;
+      text-align: left;
+      padding: 10px;
+     }
+     .desktop-middle-Section .left .bottom .text h2{
+         font-size: 2.2rem;
+         width: 100%;
+         height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+       }
+       .desktop-middle-Section .left .bottom .button{
+        width: 100%;
+        height: 60%;
+        padding: 0;
+        justify-content: left;
+        padding: 10px;      
+       }
+       .desktop-middle-Section .left .bottom .button .paragraph{
+        width: 100%;
+        height: 60%;
+        justify-content: left;
+        padding: 10px;
+       }
+       .desktop-middle-Section .left .bottom .button .paragraph p{
+        width: 100%;
+        height: 100%;
+        justify-content: left;
+        font-size: 1.3rem;
+        font-weight: 1rem;
+       }
+       .desktop-middle-Section .left .bottom .button .buttonCont{
+        width: 100%;
+        flex: 1;
         display: flex;
         align-items: center;
-        background: white;
-        gap: 2%;
-        box-shadow: 1px 1px 12px black;
-    }
-
-    .logo{
-        width: 10%;
-    }
-
-    .desktop-header-spacer{
-        width: 40%;
-        height: 80%;
-    }
-
-    .desktop-header nav{
-        display: none;
-    }
-
-    .mobile-show-menu{
-
-        height: 90%;
-        width: 10%;
-        display: block;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .mobile-show-menu ion-icon{
-
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .desktop-middle-Section{
-
+        justify-content: left;
+        flex-direction: row;
+        padding: 10px;
+        }
+        .desktop-middle-Section .left .bottom .button .buttonCont button{
+            width: 50%;
+           height: 7vh;
+           font-size: 1rem;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           padding: 0;
+        }
+     .desktop-middle-Section .right
+     {
         width: 100%;
+        min-height: 100vh;
+     }
+
+     .desktop-middle-Section .right .title
+     {
+        width: 100%;
+        justify-content: left;
+        flex-direction: row;
     }
+    .desktop-middle-Section .right .cells
+    {
+       width: 100%;
+       flex: 1;
+   }
+
+   .desktop-middle-Section .right .cells h2
+   {
+      width: 100%;
+      height: 50%;
+      justify-content: left;
+      flex-direction: row;
+      font-size: 1.2rem;
+  }
+
+  .desktop-middle-Section .right .cells p
+  {
+     width: 100%;
+     height: 50%;
+     justify-content: left;
+     flex-direction: row;
+     font-size: 1rem;
+     font-weight: 300;
+     font-style: italic;
+ }
+
+ 
+ .desktop-bottom-Section{
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .desktop-bottom-Section .cards{
+    width: 100%;
+    height: 30%;
+    border: white 1px;
+    flex-direction: row;
+ }
+
+ .desktop-bottom-Section .cards .image{
+   height: 100%;
+ }
+ .desktop-bottom-Section .cards .info{
+    width: 70%;
+    height: 80%;
+    flex-direction: column;
+  }
+  .desktop-bottom-Section .cards .info *{
+    width: 100%;
+    height: 33.3%;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .sideNav{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.486);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: top 3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    backdrop-filter: blur(20px);
+    
+  }
+  .sideNav ul{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    list-style: none;
+
+  }
+
+  .sideNav ul li{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sideNav ul li a {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .sideNav ion-icon{
+    width: 100%;
+    height: 10vh;
+    font-size: 0.5rem;
+    color: white;
+  }
+
+  .revealSideNav{
+    animation: sideNavReveal 2s ease-in-out 1;
+    z-index: 2;
+  }
+
+  @keyframes sideNavReveal {
+
+    0%{
+        top: -1000%;
+    }
+    
+  }
+
+
+
+
+
+    
+   
+    
 }

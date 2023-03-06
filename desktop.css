@@ -173,8 +173,9 @@ body{
    border-radius: 3px;
    color: white;
    box-shadow: 1px 1px 10px black;
+   z-index: 1;
    position: relative;
-   background-color: rgb(238, 124, 31);
+   background-color: rgb(190, 113, 49);
    font-weight: bold;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }

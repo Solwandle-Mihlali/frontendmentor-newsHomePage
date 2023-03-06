@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*hidding mobile elemnts*/
+
+.mobile-show-menu{
+    display: none;
+}
+
+.desktop-header{
+  
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+}
+.desktop-header .logo{
+    height: 90%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.desktop-header .logo img{
+    height: 100%;
+}
+
+.desktop-header-spacer{
+    width: 40%;
+    height: 90%;
+}
+
+.desktop-header nav{
+
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop-header nav ul {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2%;
+}
+
+.desktop-header nav ul li {
+    height: 90%;
+    width: auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.desktop-header nav ul li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+}
+
+/*middle section*/
+.desktop-middle-Section{
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 1%;
+}
+
+.desktop-middle-Section .left{
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.desktop-middle-Section .left .img{
+
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/images/image-web-3-desktop.jpg');
+}
+.desktop-middle-Section .left .bottom{
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    
+}
+
+.desktop-middle-Section .left .bottom .text{
+   height: 90%;
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.desktop-middle-Section .left .bottom .text h2{
+   font-size: 2.5rem;
+   width: 90%;
+   color: rgb(9, 9, 26);
+   padding: px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+.desktop-middle-Section .left .bottom .button{
+
+    height: 90%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ .desktop-middle-Section .left .bottom .button .buttonCont{
+
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+ }
+ .desktop-middle-Section .left .bottom .button button{
+
+   height: 5vh;
+   width: 50%;
+   border: none;
+   padding: 5px;
+   letter-spacing: 1.5px;
+   border-radius: 3px;
+   color: white;
+   box-shadow: 1px 1px 10px black;
+   position: relative;
+   background-color: rgb(238, 124, 31);
+   font-weight: bold;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .desktop-middle-Section .left .bottom .button .paragraph{
+
+  width: 90%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+ }
+
+ .desktop-middle-Section .left .bottom .button .paragraph p{
+
+  width: 80%;
+  font-size: 0.9rem;
+  height: auto;
+  text-align: left;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+   }
+
+.desktop-middle-Section .right{
+    width: 30%;
+    height: 100%;
+    border: solid;
+    background-color: rgb(9, 9, 26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.desktop-middle-Section .right .title{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(9, 9, 26);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.desktop-middle-Section .right .title h2{
+    color: orange;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.desktop-middle-Section .right .cells{
+    width: 100%;
+    height: 25%;
+    border: solid white 1px;
+    background-color: rgb(9, 9, 26);
+    border-top: none;
+    border-bottom: solid white 1px;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+}
+.desktop-middle-Section .right .cells h2{
+    width: 100%;
+    height: 30%;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.desktop-middle-Section .right .cells p{
+    width: 100%;
+    height: 70%;
+    color: white;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: start;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+.desktop-bottom-Section{
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.desktop-bottom-Section .cards{
+
+    width: 33.3%;
+    height: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.desktop-bottom-Section .cards .image{
+
+    width: 30%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-image: url('../frontendmentor-newsHomePage/assets/images/image-retro-pcs.jpg');
+}
+
+.desktop-bottom-Section .cards .info{
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.desktop-bottom-Section .cards .info h1{
+
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2px;
+  font-family: sans-serif;
+  font-weight: 0.9rem;
+}
+.desktop-bottom-Section .cards .info h2{
+
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.8rem;
+    color: rgb(156, 156, 156);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px;
+    text-transform: capitalize;
+
+  }
+
+  .desktop-bottom-Section .cards .info h3{
+
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: rgb(71, 70, 70);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px;
+    text-transform: capitalize;
+  }
+  
+  #middleCard{
+    background-image: url(../frontendmentor-newsHomePage/assets/images/image-top-laptops.jpg);  
+  }
+
+  #lastCard{
+    background-image: url(../frontendmentor-newsHomePage/assets/images/image-gaming-growth.jpg);
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

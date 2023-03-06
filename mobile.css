@@ -1,0 +1,53 @@
+@media all and (max-width:600px){
+     body{
+
+        width: 100%;
+        min-height: 100vh;
+        justify-content: flex-start;
+     }
+    .mobile-header{
+        position: relative;
+        width: 100%;
+        height: 10vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background: white;
+        gap: 2%;
+        box-shadow: 1px 1px 12px black;
+    }
+
+    .logo{
+        width: 10%;
+    }
+
+    .desktop-header-spacer{
+        width: 40%;
+        height: 80%;
+    }
+
+    .desktop-header nav{
+        display: none;
+    }
+
+    .mobile-show-menu{
+
+        height: 90%;
+        width: 10%;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-show-menu ion-icon{
+
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .desktop-middle-Section{
+
+        width: 100%;
+    }
+}
